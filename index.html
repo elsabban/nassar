@@ -38,14 +38,16 @@
         <div class="col-12">
     <div class="navbar navbar-expand-sm bsnav  bsnav-scrollspy">
      
-            <a class="navbar-brand" href="#">bsnav</a>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a>
             <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-sm-end">
                 <ul class="navbar-nav navbar-mobile mr-0">
-                    <li class="nav-item"><a class="nav-link" href="#" data-scrollspy="section1">Section 1</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-scrollspy="section2">Section 2</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-scrollspy="section3">Section 3</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-scrollspy="section4">Section 4</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#" data-scrollspy="section1">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scrollspy="section2">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scrollspy="section3">Social</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scrollspy="section4">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scrollspy="section5">Books</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scrollspy="section6">Contact</a></li>
                 </ul>
             </div>
           </div>
@@ -69,19 +71,19 @@
     <section class="scrollspy-demo" id="section1">
         <div class="video-background-holder">
             <div class="video-background-overlay"></div>
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <video playsinline="playsinline" autoplay muted="muted" loop="loop">
                   <source src="assets/video/test.mp4" type="video/mp4">
               </video>
             <div class="video-background-content container h-100">
               <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-70 text-white">
                   <h1 class="display-4">Hi, I'M HUSSEIN EL NASSAR</h1>
-                  <p class="lead mb-0">Business Strategist who empowers entrepreneurs to build a brand,
+                  <p class="lead">Business Strategist who empowers entrepreneurs to build a brand,
                      market it on social media, and create a life they love.</p>
 
 
                   <div class="hero-btnz">
-                      <a href="" class="btn cust-btn bg-pink">
+                      <a href="#" id="downC" class="btn cust-btn bg-pink">
                           <span class="in-btn">Explore</span>
                       </a> 
                       <b>OR</b>
@@ -94,23 +96,22 @@
               </div>
             </div>
           </div>
+         
     </section>
     <!-- hero section modal video -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+              
             </div>
             <div class="modal-body">
-                <video playsinline="playsinline" id="video1" autoplay="autoplay" controls style="width:100%;height: 100%;" loop="loop">
+                <video playsinline="playsinline" id="video1" autoplay controls style="width:100%;height: 100%;" loop="loop">
                     <source src="assets/video/test.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -120,11 +121,166 @@
     <!-- ------------------------
      end hero video section
      ----------------------------->
-    <section class="scrollspy-demo" style="height:20em" id="section2">...</section>
-    
-    <section class="scrollspy-demo" style="height:20em" id="section3">...</section>
-    
-    <section class="scrollspy-demo" style="height:20em" id="section4">...</section>
+
+      <!--------------------------
+             about section
+        --------------------------->
+        <div class="curve">
+          <img src="assets/img/curve.svg">
+        </div>
+    <section class="scrollspy-demo"   id="section2">
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+           <div class="about-img">
+<img src="assets/img/about.png">
+           </div>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="about-text">
+            <div class="title">
+              <p>ABOUT ME</p>
+            </div>
+              <h2>I'm a
+                 Business Strategist who empowers entrepreneurs to build a brand</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                   Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                   Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--------------------------
+           end  about section
+        --------------------------->
+
+
+
+    <!----------------------------  
+          social media 
+      --------------------------->
+
+
+    <section class="scrollspy-demo"   id="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center title">
+            <p>Social Media Links</p>
+            <h1>Social Statistics</h1>
+            <p class="px-md-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <!-- single social box -->
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-12 mx-auto">
+            <div class="follow-box text-center">
+              <!-- followers number -->
+              <div class="follow-num">
+                <p><span>870</span>K</p>
+              </div>
+              <!-- social platform -->
+              <div class="follow-info">
+                <P>Instagram followers</P>
+              <a href="#"><i class="fab fa-instagram"></i> @husseinelnassar</a>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+              </div>
+
+            </div>
+
+        </div>
+        <!-- ---------------- -->
+
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-12 mx-auto">
+          <div class="follow-box text-center">
+            <div class="follow-num">
+              <p><span>930</span>K</p>
+            </div>
+            <div class="follow-info">
+              <P>Facebook followers</P>
+            <a href="#"><i class="fab fa-facebook-square"></i> @husseinelnassar</a>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+            </div>
+
+          </div>
+
+      </div>
+      <div class=" col-lg-3 col-md-4 col-sm-6 col-12 mx-auto">
+        <div class="follow-box text-center">
+          <div class="follow-num">
+            <p><span>630</span>K</p>
+          </div>
+          <div class="follow-info">
+            <P>Twitter followers</P>
+          <a href="#"><i class="fab fa-twitter"></i> @husseinelnassar</a>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+          </div>
+
+        </div>
+
+    </div>
+    <div class=" col-lg-3 col-md-4 col-sm-6 col-12 mx-auto">
+      <div class="follow-box text-center">
+        <div class="follow-num">
+          <p><span>101</span>K</p>
+        </div>
+        <div class="follow-info">
+          <P>Snap followers</P>
+        <a href="#"><i class="fab fa-snapchat-ghost"></i> @husseinelnassar</a>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        </div>
+
+      </div>
+
+  </div>
+      </div>
+
+    </div>
+
+    </section>
+    <!----------------------------  
+         end social media 
+      --------------------------->
+
+
+
+    <section class="scrollspy-demo"   id="section4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center title">
+              <p>Media Center</p>
+              <h1>See My Latest Videos</h1>
+              <p class="px-md-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+            </div>
+          </div>
+  
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-12 mx-auto">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scrollspy-demo"   id="section5">...</section>
+    <section class="scrollspy-demo"   id="section6">...</section>
     </body>
         
 <script src="assets/js/jquery-3.4.1.min.js"></script>
