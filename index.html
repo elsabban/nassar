@@ -87,7 +87,7 @@
                           <span class="in-btn">Explore</span>
                       </a> 
                       <b>OR</b>
-                  <button type="button" class="btn ply btn-lg" data-toggle="modal" data-target="#myModal">
+                  <button type="button" data-src="assets/video/test.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
                     <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
                     <span>watch video</span>
                   </button>
@@ -99,7 +99,7 @@
          
     </section>
     <!-- hero section modal video -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade targeted" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -107,8 +107,8 @@
               
             </div>
             <div class="modal-body">
-                <video playsinline="playsinline" id="video1" autoplay controls style="width:100%;height: 100%;" loop="loop">
-                    <source src="assets/video/test.mp4" type="video/mp4">
+                <video id="recap" playsinline="playsinline" autoplay controls   style="width:100%;max-height:80vh;" loop="loop">
+                    <source  src="" type="video/mp4">
                 </video>
             </div>
            
@@ -273,9 +273,123 @@
   
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 col-12 mx-auto">
-              
+          <div id="videos" class="owl-carousel">
+            <div class="item"> 
+              <div class="card">
+                <div class="card-video-holder">
+                  <div class="card-video-overlay"></div>
+                  <button type="button" data-src="assets/video/test.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
+                    <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
+                    <!-- <span>watch video</span> -->
+                  </button>
+                  <video playsinline="playsinline" muted="muted" loop="loop">
+                    <source src="assets/video/test.mp4" type="video/mp4">
+                </video>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">  video title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">added 3 mins ago</small>
+                </div>
+            
+            </div>
+           </div>
+            <div class="item"> 
+               
+              <div class="card">
+               <div class="card-video-holder">
+                <div class="card-video-overlay"></div>
+                <button type="button" data-src="assets/video/test2.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
+                  <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
+                  <!-- <span>watch video</span> -->
+                </button>
+                <video playsinline="playsinline" muted="muted" loop="loop">
+                  <source src="assets/video/test2.mp4" type="video/mp4">
+              </video>
+               </div>
+                <div class="card-body">
+                    <h5 class="card-title">  video title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">added 3 mins ago</small>
+                </div>
+            </div>
+           
+           </div>
+           <div class="item"> 
+               
+            <div class="card">
+             <div class="card-video-holder">
+              <div class="card-video-overlay"></div>
+              <button type="button" data-src="assets/video/test2.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
+                <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
+                <!-- <span>watch video</span> -->
+              </button>
+              <video playsinline="playsinline" muted="muted" loop="loop">
+                <source src="assets/video/test2.mp4" type="video/mp4">
+            </video>
+             </div>
+              <div class="card-body">
+                  <h5 class="card-title">  video title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+              </div>
+              <div class="card-footer">
+                  <small class="text-muted">added 3 mins ago</small>
+              </div>
           </div>
+         
+         </div>
+         <div class="item"> 
+               
+          <div class="card">
+           <div class="card-video-holder">
+            <div class="card-video-overlay"></div>
+            <button type="button" data-src="assets/video/test2.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
+              <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
+              <!-- <span>watch video</span> -->
+            </button>
+            <video playsinline="playsinline" muted="muted" loop="loop">
+              <source src="assets/video/test2.mp4" type="video/mp4">
+          </video>
+           </div>
+            <div class="card-body">
+                <h5 class="card-title">  video title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">added 3 mins ago</small>
+            </div>
+        </div>
+       
+       </div>
+       <div class="item"> 
+               
+        <div class="card">
+         <div class="card-video-holder">
+          <div class="card-video-overlay"></div>
+          <button type="button" data-src="assets/video/test2.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
+            <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
+            <!-- <span>watch video</span> -->
+          </button>
+          <video playsinline="playsinline" muted="muted" loop="loop">
+            <source src="assets/video/test2.mp4" type="video/mp4">
+        </video>
+         </div>
+          <div class="card-body">
+              <h5 class="card-title">  video title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+          </div>
+          <div class="card-footer">
+              <small class="text-muted">added 3 mins ago</small>
+          </div>
+      </div>
+     
+     </div>
+          </div>
+         
         </div>
       </div>
     </section>
