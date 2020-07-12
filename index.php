@@ -1,3 +1,8 @@
+<?php 
+
+ $url = "http://" . $_SERVER['SERVER_NAME'].'/';
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -72,7 +77,7 @@
         <div class="video-background-holder">
             <div class="video-background-overlay"></div>
             <video playsinline="playsinline" autoplay muted="muted" loop="loop">
-                  <source src="assets/video/test.mp4" type="video/mp4">
+                  <source src="assets/video/test1.mp4" type="video/mp4">
               </video>
             <div class="video-background-content container h-100">
               <div class="d-flex h-100 text-center align-items-center">
@@ -87,7 +92,7 @@
                           <span class="in-btn">Explore</span>
                       </a> 
                       <b>OR</b>
-                  <button type="button" data-src="assets/video/test.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
+                  <button type="button" data-src="assets/video/test1.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
                     <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
                     <span>watch video</span>
                   </button>
@@ -175,7 +180,7 @@
         <div class="col-12">
           <div class="text-center title">
             <p>Social Media Links</p>
-            <h1>Social Statistics</h1>
+            <h2>Social Statistics</h2>
             <p class="px-md-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
           </div>
@@ -265,7 +270,7 @@
           <div class="col-12">
             <div class="text-center title">
               <p>Media Center</p>
-              <h1>See My Latest Videos</h1>
+              <h2>See My Latest Videos</h2>
               <p class="px-md-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   
             </div>
@@ -276,14 +281,14 @@
           <div id="videos" class="owl-carousel">
             <div class="item"> 
               <div class="card">
-                <div class="card-video-holder">
+                <div class="card-video-holder xx">
                   <div class="card-video-overlay"></div>
-                  <button type="button" data-src="assets/video/test.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
+                  <button type="button" data-src="assets/video/test2.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
                     <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
                     <!-- <span>watch video</span> -->
                   </button>
                   <video playsinline="playsinline" muted="muted" loop="loop">
-                    <source src="assets/video/test.mp4" type="video/mp4">
+                    <source src="assets/video/test2.mp4" type="video/mp4">
                 </video>
                 </div>
                 <div class="card-body">
@@ -299,14 +304,14 @@
             <div class="item"> 
                
               <div class="card">
-               <div class="card-video-holder">
+               <div class="card-video-holder xx">
                 <div class="card-video-overlay"></div>
-                <button type="button" data-src="assets/video/test2.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
+                <button type="button" data-src="assets/video/test1.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
                   <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
                   <!-- <span>watch video</span> -->
                 </button>
                 <video playsinline="playsinline" muted="muted" loop="loop">
-                  <source src="assets/video/test2.mp4" type="video/mp4">
+                  <source src="assets/video/test1.mp4" type="video/mp4">
               </video>
                </div>
                 <div class="card-body">
@@ -322,7 +327,7 @@
            <div class="item"> 
                
             <div class="card">
-             <div class="card-video-holder">
+             <div class="card-video-holder xx">
               <div class="card-video-overlay"></div>
               <button type="button" data-src="assets/video/test2.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
                 <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
@@ -345,14 +350,14 @@
          <div class="item"> 
                
           <div class="card">
-           <div class="card-video-holder">
+           <div class="card-video-holder xx">
             <div class="card-video-overlay"></div>
-            <button type="button" data-src="assets/video/test2.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
+            <button type="button" data-src="assets/video/test1.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
               <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
               <!-- <span>watch video</span> -->
             </button>
             <video playsinline="playsinline" muted="muted" loop="loop">
-              <source src="assets/video/test2.mp4" type="video/mp4">
+              <source src="assets/video/test1.mp4" type="video/mp4">
           </video>
            </div>
             <div class="card-body">
@@ -368,7 +373,7 @@
        <div class="item"> 
                
         <div class="card">
-         <div class="card-video-holder">
+         <div class="card-video-holder xx">
           <div class="card-video-overlay"></div>
           <button type="button" data-src="assets/video/test2.mp4" class="btn ply btn-lg" data-toggle="modal" data-target=".targeted">
             <div class="ply-btn bg-pink"><i class="fas fa-play"></i></div>
@@ -393,8 +398,100 @@
         </div>
       </div>
     </section>
-    <section class="scrollspy-demo"   id="section5">...</section>
-    <section class="scrollspy-demo"   id="section6">...</section>
+    <section class="scrollspy-demo"   id="section5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center title">
+              <p>BOOKS</p>
+              <h1>See My Latest BOOKS</h1>
+              <p class="px-md-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+            </div>
+          </div>
+  
+        </div>
+        <div class="row">
+          <div id="books" class="owl-carousel">
+            <div class="item"> 
+              <div class="card">
+                <div class="card-video-holder">
+                  
+               <!-- put the pdf file path like this  https://docs.google.com/gview?url= -- pdf path -- &embedded=true-->
+                  <iframe  src="https://docs.google.com/gview?url=<?php echo $url; ?>assets/pdf.pdf&embedded=true" frameborder="0" height="" width="100%"></iframe>
+
+                </div>
+                <div class="card-body">
+                      <h5>BOOK NAME</h5> 
+                      <a class="view-pdf cust-btn bg-pink " href="https://docs.google.com/gview?url=<?php echo $url; ?>assets/pdf.pdf&embedded=true"><span class="in-btn">view</span></a>
+                      <a class="down-pdf cust-btn bg-pink " href="assets/pdf.pdf" download><span class="in-btn">download</span></a>
+                   
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                </div>
+                <!-- <div class="card-footer">
+                    <small class="text-muted">added 3 mins ago</small>
+                </div> -->
+            
+            </div>
+           </div>
+         
+       </div>
+          </div>
+         
+        </div>
+      
+    </section>
+    <section class="scrollspy-demo"   id="section6">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center title">
+              <p>GET IN TOUCH</p>
+              <h2>let's contact us</h2>
+              <p class="px-md-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+            </div>
+          </div>
+  
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="msg_subject" id="msg_subject" placeholder="Subject" required="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="Phone Number" required="">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea placeholder="Message" name="message" id="message" class="form-control" rows="6" required=""></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     </body>
         
 <script src="assets/js/jquery-3.4.1.min.js"></script>
