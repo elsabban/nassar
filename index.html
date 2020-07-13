@@ -4,14 +4,14 @@
 
 ?>
 <!DOCTYPE html>
-<html>
+<html class="loading">
 
 <head>
-    <title>influencer</title>
+    <title>ELNASSAR</title>
     <meta charset="utf-8">
-    <link rel="icon" href="assets/img/" type="image/gif" sizes="16x16">
+    <link rel="icon" href="assets/img/logo.png" type="image/gif" sizes="16x16">
     <meta name="description" content="personal blog">
-    <meta name="keywords" content="influencer,youtube,twitter,instgram,facebook,tiktok,business,ask,managment">
+    <meta name="keywords" content="influencer,youtube,twitter,instgram,facebook,tiktok,business,ask,managment,SNAPCHAT">
     <meta name="author" content="YIS web team">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="loading">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="loading">
   <div class="preloader "><div class="loader"></div></div>
     <!--------------------
         navbar
@@ -41,18 +41,18 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-    <div class="navbar navbar-expand-md bsnav ">
+    <div class="navbar navbar-expand-md bsnav  ">
      
             <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a>
             <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-sm-end">
                 <ul class="navbar-nav navbar-mobile mr-0">
-                    <li class="nav-item active"><a class="nav-link scroll" href="#section1" >Home</a></li>
-                    <li class="nav-item"><a class="nav-link scroll" href="#section2" >About</a></li>
-                    <li class="nav-item"><a class="nav-link scroll" href="#section3" >Social</a></li>
-                    <li class="nav-item"><a class="nav-link scroll" href="#section4" >Media</a></li>
-                    <li class="nav-item"><a class="nav-link scroll" href="#section5" >Books</a></li>
-                    <li class="nav-item"><a class="nav-link scroll" href="#section6" >Contact</a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-item active"><a class="nav-link" href="#section1" >Home</a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-item"><a class="nav-link" href="#section2" >About</a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-item"><a class="nav-link" href="#section3" >Social</a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-item"><a class="nav-link" href="#section4" >Media</a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-item"><a class="nav-link" href="#section5">Books</a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-item"><a class="nav-link" href="#section6" >Contact</a></li>
                 </ul>
             </div>
           </div>
@@ -63,7 +63,7 @@
     </header>
     <div class="bsnav-mobile">
       <div class="bsnav-mobile-overlay"></div>
-      <div class="navbar "></div>
+      <div class="navbar bsnav-scrollspy"></div>
     </div>
     <!--------------------
         end navbar
@@ -130,7 +130,7 @@
       <!--------------------------
              about section
         --------------------------->
-        <div class="curve">
+        <div class="curve d-none d-md-block">
           <img src="assets/img/curve.svg">
         </div>
     <section class="scrollspy-demo"   id="section2">

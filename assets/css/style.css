@@ -24,39 +24,39 @@ height: 100vh;
 
 }
 
-#overlayer {
-width: 100%;
-height: 100%;
-position: fixed;
-z-index: 5001;
-background: white;
-top: 0;
-left: 0;
-overflow:hidden;
-}
-.loader-block-main{
-background-color:white;
-width: 100%;
-height: 100vh;
-position: relative;
-}
-.loader-bx {
-color: rgb(0, 140, 255);
-font-size: 14px;
-width: 1em;
-height: 1em;
-border-radius: 50%;
-text-indent: -9999em;
--webkit-animation: loadinganime 1.3s infinite linear;
-animation: loadinganime 1.3s infinite linear;
-position: absolute;
-top: 50%;
-left: 50%;
-z-index: 11;
-margin: 0;
-transform: translate(-50%, -50%);
-z-index: 5999;
-}
+/*#overlayer {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*position: fixed;*/
+/*z-index: 5001;*/
+/*background: white;*/
+/*top: 0;*/
+/*left: 0;*/
+/*overflow:hidden;*/
+/*}*/
+/*.loader-block-main{*/
+/*background-color:white;*/
+/*width: 100%;*/
+/*height: 100vh;*/
+/*position: relative;*/
+/*}*/
+/*.loader-bx {*/
+/*color: rgb(0, 140, 255);*/
+/*font-size: 14px;*/
+/*width: 1em;*/
+/*height: 1em;*/
+/*border-radius: 50%;*/
+/*text-indent: -9999em;*/
+/*-webkit-animation: loadinganime 1.3s infinite linear;*/
+/*animation: loadinganime 1.3s infinite linear;*/
+/*position: absolute;*/
+/*top: 50%;*/
+/*left: 50%;*/
+/*z-index: 11;*/
+/*margin: 0;*/
+/*transform: translate(-50%, -50%);*/
+/*z-index: 5999;*/
+/*}*/
 
 .video-background-holder {
 position: relative;
@@ -99,7 +99,7 @@ opacity: 0.7;
 z-index: 1;
 }
 .bg-pink {
-background-color: rgb(206, 31, 89);
+background-color: #ff2c6f;
 }
 .ply-btn {
  
@@ -167,7 +167,113 @@ background: rgba(255, 255, 255, 0.5);
           transform: scale(2);
 }
 }
+/* loader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  overflow: hidden;
+  background: #000000;
+}
 
+.preloader .loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 110px;
+  height: 110px;
+  margin: -80px 0 0 -75px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: #ff2c6f;
+  -webkit-animation: spin 1.7s linear infinite;
+          animation: spin 1.7s linear infinite;
+  z-index: 11;
+  overflow:hidden;
+}
+
+.preloader .loader::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: #ffffff;
+  -webkit-animation: spin-reverse .6s linear infinite;
+          animation: spin-reverse .6s linear infinite;
+          
+}
+
+.preloader .loader::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: #ff2c6f;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.preloader-deactivate {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+/* --------------- */
 .hero-btnz a.btn {
 color:white;
 border-radius: 0;
@@ -214,6 +320,7 @@ height: 100%;
 width:0;
 background-color: black;
 transition: 0.3s;
+display: inline-block;
 }
 
 .cust-btn:hover::after {
@@ -350,7 +457,7 @@ position: relative;
 .curve {
 width:100%;
 position: absolute;
-bottom: 0;
+bottom: -1px;
 left:0;
 z-index:3;
 }
@@ -359,7 +466,7 @@ width:100%;
 }
 /* --------------- about ------------- */
 #section2,#section3,#section4,#section5,#section6 {
-padding: 5em 0 2em;
+margin: 5em 0 2em;
 }
 
 .about-text p {
@@ -568,6 +675,7 @@ opacity: 1;
 /* -------------------- books ---------------- */
 #books .card iframe {
   height: 100%;
+  width:100%;
 }
 .pdfs .modal-footer {
   border: none;
@@ -576,6 +684,9 @@ opacity: 1;
 .pdfs .modal-footer button {
   margin:0 auto;
 
+}
+.pdfs iframe {
+        height: 50vh;
 }
 .pdfs .modal-body {
 background-color: black;;
@@ -590,7 +701,7 @@ background-color: black;;
   margin-top: 0.5em;
 }
 .view-pdf ,.down-pdf{
-padding: 5px 13px;
+padding: 5px 10px;
 margin-bottom: 0.5em;
 
 }
@@ -654,6 +765,7 @@ margin-bottom: 0.5em;
           box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
   background-color: #ffffff;
   padding: 40px;
+  margin:1em;
 }
 
 .contact-form h2 {
@@ -675,6 +787,64 @@ margin-bottom: 0.5em;
 .contact-form .form-group {
   margin-bottom: 30px;
 }
+/* footer */
+footer {
+  background-color: #000000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer p {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 500;
+}
+
+footer p .fa-heart {
+  color: red;
+}
+
+footer p a {
+  display: inline-block;
+  color: #ffffff;
+}
+
+footer p a:hover, footer p a:focus {
+  color: #ff2c6f;
+}
+
+footer ul {
+  text-align: right;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+footer ul li a {
+  height: 35px;
+  font-size: 14px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #000000;
+  border-radius: 50%;
+  background: #ffffff;
+  display:inline-block;
+}
+
+footer ul li a:hover, footer ul li a:focus {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-color: #ff2c6f;
+  color: #ffffff;
+}
 
 /* -----------------------
         Responsive
@@ -684,6 +854,8 @@ margin-bottom: 0.5em;
 max-width: 70%;
 margin: 1.75rem auto;
 }
+
+
 
 }
 @media (max-width:575px) {
@@ -733,5 +905,23 @@ margin: 0.5em 0 1em;
 .hero-btnz b {
 display: block;
 margin-top:0.5em;
+}
+}
+@media (width:1024px) {
+    .curve{
+        display:none;
+    }
+}
+@media (max-width:768px){
+  .curve{
+        display:none;
+    }
+  footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer ul {
+  text-align:center;
 }
 }

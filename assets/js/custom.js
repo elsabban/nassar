@@ -1,7 +1,46 @@
 
+$(window).on('load',function() {
+	$(".preloader").addClass('preloader-deactivate');
+   $('.loading').removeClass('loading');
+$('.card-video-holder iframe').each(function () {
+  
+  var pdfSrc = $(this).data('src');
+  $(this).attr('src',pdfSrc);
+  var viewPdf = $(this).parent().next().children('a.view-pdf');
+  viewPdf.attr('href',pdfSrc);
 
+});
+  
+});
 
 $(document).ready(function (){
+ // pdf viewer and download 
+// In regular js file be sure to include 
+//$(document).ready(function(){}
+
+// Add smooth scroll on all links inside the navbar
+$(".Navbar a").on('click', function(event) {
+  //Make sure this,hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+    
+    // Store hash
+    var hash = this.hash;
+    
+    // Use jquery animate() method to add smooth scroll
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+      
+      // Add hash to URL when done scrolling -default click behavior
+      window.location.hash = hash;
+    });
+  }
+});
+
+
+
   $("#downC").click(function (e){
     // e.preventDefault();
       $('html, body').animate({
@@ -50,7 +89,7 @@ $('#videos').owlCarousel({
       0:{
         items:1
       },
-      575:{
+      700:{
           items:2
       },
       1100:{
@@ -62,8 +101,8 @@ $('#videos').owlCarousel({
 });
 $('#books').owlCarousel({
   
-
-  loop:true,
+  center: true,
+  loop:false,
   // margin:30,
   nav:true,
   navText: ["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
@@ -71,7 +110,7 @@ $('#books').owlCarousel({
       0:{
         items:1
       },
-      575:{
+      700:{
           items:2
       },
       1100:{
@@ -139,9 +178,9 @@ function hideVideo(e) {
 $(function(){    
     $('.view-pdf').on('click',function(){
         var pdf_link = $(this).attr('href');
-        //var iframe = '<div class="iframe-container"><iframe src="'+pdf_link+'"></iframe></div>'
+        var iframe = '<div class="iframe-container"><iframe src="'+pdf_link+'"></iframe></div>'
         //var iframe = '<object data="'+pdf_link+'" type="application/pdf"><embed src="'+pdf_link+'" type="application/pdf" /></object>'        
-        var iframe = '<object type="application/pdf" data="'+pdf_link+'" width="100%" height="500">No Support</object>'
+        // var iframe = '<object type="application/pdf" data="'+pdf_link+'" width="100%" height="500">No Support</object>'
         $.createModal({
             title:'My Title',
             message: iframe,
